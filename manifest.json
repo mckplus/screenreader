@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Visual Assist",
+  "version": "1.0",
+  "description": "An accessibility tool for visually impaired users.",
+  "permissions": ["activeTab", "storage", "tabs", "tts", "scripting"],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "commands": {
+    "capture_screen": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Capture screen for accessibility analysis"
+    }
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
