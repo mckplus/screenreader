@@ -78,7 +78,7 @@ async function captureAndProcessTab(tab) {
     });
 
     console.log("Screenshot Captured Successfully!");
-    const openaiApiKey = "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";
+    const openaiApiKey = "[KEY MUST GO HERE]";
     const base64Image = imageUri.split(",")[1];
 
     const visionResponse = await fetch('https://api.openai.com/v1/chat/completions', {
