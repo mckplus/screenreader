@@ -44,7 +44,7 @@ const sendToGemini = async (imageUri) => {
       {
         parts: [
           {
-            text: "What are the main points I should get from this screeshot?",
+            text: "You are an assistant for a computer user who is visually impared. Provide a detailed description of this screenshot, suitable for supporting someone with a visual impairment.",
           },
           {
             inline_data: {
