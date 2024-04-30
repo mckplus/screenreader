@@ -3,7 +3,7 @@
   "name": "Visual Assist",
   "version": "1.0",
   "description": "An accessibility tool for visually impaired users.",
-  "permissions": ["activeTab", "storage", "tabs", "tts", "scripting"],
+  "permissions": ["activeTab", "storage", "tabs", "tts", "scripting", "downloads"],
   "host_permissions": [
     "<all_urls>"
   ],
